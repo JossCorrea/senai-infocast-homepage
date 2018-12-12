@@ -1,0 +1,106 @@
+.navbar{
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+
+    &__logo{
+        width: 28.7%;
+        
+        .logo{
+            margin:6.5% 23% 0 30%;
+        }
+    }
+    &__menu{
+        width: 59%;
+     
+        .menu__hamburguer{
+            display:none;
+        }
+
+        .menu__links{
+            width: 100%;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            list-style: none;  
+            align-items: center;
+            justify-content: space-between;
+            margin-top:13.5rem;
+            
+            .link{
+                text-align: center;
+                padding-right:2rem;
+                
+                a{
+                    color: #FFF;
+                    font-size: 2rem;
+                }
+    
+                .bar{
+                    width: 3rem;
+                    background-color: transparent;
+                    height: 0.5rem;
+                    border: none;
+                    margin:2.0rem auto 0 auto;
+                }
+    
+                &:hover{
+                    & a{
+                        font-weight: 700;
+                    }
+                    & .bar{
+                        background-color: #730BD2;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 750px) {
+    .navbar{
+        &__logo{
+            width: 60%;
+            .logo{
+                margin:7% 14% 0% 13%;
+            }
+        }
+        &__menu{
+            width: 40%;
+            display:flex;
+            flex-direction: column;
+            align-items:flex-end;
+
+            .menu__hamburguer {
+                display: block;
+                background-color: transparent;
+                border:none;
+                margin: 48% 31% 5% 0%;
+            }   
+
+            .menu__links{
+                display: none;
+
+                & .active{
+                    flex-direction: column;
+                    align-items: flex-end;
+                    margin-top:0;
+
+                    .link{
+                        margin: 1rem;
+                        
+                        a{
+                            font-size: 4rem;
+                        }
+            
+                        .bar{
+                            display:none;
+                        }
+                    }
+                } 
+
+            }
+        }
+    }
+}    

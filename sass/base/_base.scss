@@ -1,0 +1,21 @@
+html{
+    font-size: 0.520833333vw;  //Tamanho relativo à largura da janela aprox.10px
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2 {
+    font-family: 'Space Mono', monospace;   
+}
+
+a {
+    text-decoration: none;
+}

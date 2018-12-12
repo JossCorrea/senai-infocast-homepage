@@ -1,0 +1,268 @@
+/*section speakers*/
+
+.speakers {
+    position: relative;
+    margin-top: -10%;
+    padding-top:15%;
+    z-index: 1;
+    
+    
+    /*Configuração do clip path da section speakers*/
+        .speakers__background{
+        content: '';
+        z-index: 0;
+        position: absolute;
+        top:0;
+        background-color:#ff5050;
+        -webkit-clip-path: polygon(0% 1.5%, 4% 1.5%, 7% 6.8%, 27.5% 6.8%, 30.5% 1.5%, 61.5% 1.5%, 62.3% 0, 76.7% 0, 77.6% 1.5%, 100% 1.5%, 100% 30%, 87% 30%, 79% 16%, 67% 16%, 56% 35%, 74% 66%, 94% 66%, 98% 60%, 100% 60%, 100% 98%, 93% 98%, 92% 100%, 77% 100%, 76% 98%, 0 98%, 0% 89%, 8% 89%, 19% 70%, 13% 59%, 0% 59%);   
+        clip-path: polygon(0% 1.5%, 4% 1.5%, 7% 6.8%, 27.5% 6.8%, 30.5% 1.5%, 61.5% 1.5%, 62.3% 0, 76.7% 0, 77.6% 1.5%, 100% 1.5%, 100% 30%, 87% 30%, 79% 16%, 67% 16%, 56% 35%, 74% 66%, 94% 66%, 98% 60%, 100% 60%, 100% 98%, 93% 98%, 92% 100%, 77% 100%, 76% 98%, 0 98%, 0% 89%, 8% 89%, 19% 70%, 13% 59%, 0% 59%);   
+        height: 99.9vw;
+        width: 100%;
+        margin-top: 3%;
+
+        @media (max-width: 750px) {
+            margin-top: -6%;
+            height: 639vw;
+            background-color:#ff5050;
+            -webkit-clip-path:polygon(0% 1.5%, 4% 1.5%, 7% 2.3%, 27.5% 2.3%, 30.5% 1.5%, 61.5% 1.5%, 62.3% 1.3%, 76.7% 1.3%, 77.6% 1.5%, 100% 1.5%, 100% 37.5%, 71% 37.5%, 50% 32%, 17% 32%, 0% 35.6%, 0% 45%, 25.6% 52.1%, 87.5% 52.1%, 96% 49.8%, 100% 49.8%, 100% 99.7%, 93.5% 99.7%, 92% 100%, 77.6% 100%, 76% 99.7%, 0% 99.7%);
+            clip-path:polygon(0% 1.5%, 4% 1.5%, 7% 2.3%, 27.5% 2.3%, 30.5% 1.5%, 61.5% 1.5%, 62.3% 1.3%, 76.7% 1.3%, 77.6% 1.5%, 100% 1.5%, 100% 37.5%, 71% 37.5%, 50% 32%, 17% 32%, 0% 35.6%, 0% 45%, 25.6% 52.1%, 87.5% 52.1%, 96% 49.8%, 100% 49.8%, 100% 99.7%, 93.5% 99.7%, 92% 100%, 77.6% 100%, 76% 99.7%, 0% 99.7%);
+        }
+    }
+
+  /*Tílulo da seção*/
+  &__title {
+    display: block;
+    font-size: 6rem;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    font-weight: 500;
+    text-align: center;
+    // margin-bottom: 50px;
+        @media(max-width: 750px) {
+            font-size: 12rem;
+            margin-top:11%;
+        }
+    }
+
+
+    &__container {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        position: relative;
+        z-index: 2;
+        
+        @media(max-width: 750px) {
+            width: 100%;
+            margin:9% 0 0 18%;
+            flex-direction: column;
+        }
+    }
+}
+
+
+.speakers__col-1,
+.speakers__col-2 {
+    width: 50%;
+    margin: 0;
+    @media(max-width: 750px) {
+        margin: 0;
+    }
+}
+
+.speakers__col-2 {
+    margin-top: 19.7%;
+    // margin-left: -20%;
+    .speakers__layout-profile {
+        margin-bottom: 18.5%;
+
+        @media(max-width: 750px) {
+            margin-bottom: 3%;
+        }
+    }
+
+    @media(max-width: 750px) {
+        margin-top: 15.7%;
+    }
+}
+
+/*Box de cada perfil (speakers)*/
+.speakers__layout-profile {
+    display: flex;
+    justify-content: space-between;  
+    margin-bottom: 13%;
+
+    // margin-bottom: 100px;
+
+    @media(max-width: 750px) {
+        flex-direction: column;
+        margin-bottom: 22%;
+    }
+}
+
+/*Configuração do box e fotos dos perfis*/
+$tamanho_img : 25vw;
+$tamanho_img_750 : 65vw;
+
+.layout-profile__img {
+    position: relative;
+    height: $tamanho_img;
+    margin: 0;
+    z-index: 2;
+    @media(max-width: 750px) {
+        height: $tamanho_img_750;
+    }
+    img  {
+        position: absolute;
+        width: $tamanho_img;
+        z-index: 2;
+
+        @media(max-width: 750px) {
+            width: $tamanho_img_750;
+        }
+    }  
+       
+    /*Configuração das fotos dos perfis inseridas no box*/
+    &-front {
+        z-index: 4;
+        width: $tamanho_img;
+        @media(max-width: 750px) {
+            width: $tamanho_img_750;
+        }
+    }
+    
+    &-back {
+        z-index: 3;
+        width: $tamanho_img;
+        opacity: 0;
+        @media(max-width: 750px) {
+            width: $tamanho_img_750;
+        }
+    }
+    /*Configuração do hover*/
+    &:hover {
+        & .layout-profile__img-front {
+            opacity: 0.1;
+        }
+        & .layout-profile__img-back {
+            opacity: 1;
+        }
+    }
+}
+
+/*Configuração box de textos*/
+.layout-profile__text{
+    width: 48%;
+    color:#fff;
+    z-index: 5;
+    font-size: 1.8rem;
+    line-height: 3.8rem;
+    margin-top: 13.4%;
+
+    @media(max-width: 750px) {
+        width: 100%;
+        margin-top: 6%;
+        margin-left: 7%;
+        font-size: 4.8rem;
+        line-height: 9.8rem;
+    }
+
+     /*configuração do subtítulo*/
+    &-title {
+        font-weight: 200;
+        line-height: 4.6rem;
+        font-size: 4.2rem;
+        @media(max-width: 750px) {
+            line-height: 12.2rem;
+            font-size: 10.4rem;
+        }
+    }
+
+    /*configuração linha abaixo do título*/
+    .layout__line {
+        border-bottom: 0.5rem solid #fff;
+        width: 3rem;
+        margin: 9% 0% 5% 0%;
+        
+        @media(max-width: 750px) {
+            border-bottom: 1rem solid #fff;
+            width: 8rem;
+            margin: 8% 0% 5% 0%;
+        }
+
+        &-color{
+        border-bottom: 0.4rem solid #ff5050;
+        width: 3rem;
+        margin: 9% 0% 5% 0%;
+
+            @media(max-width: 750px) {
+                border-bottom: 1rem solid #ff5050;
+                width: 8rem;
+                margin: 23% 0% 20% 0%;
+            }
+        }   
+    } 
+
+    /*configuração do texto colorido*/
+        &.color {
+        color: #ff5050;
+
+        @media(max-width: 750px) {
+            color: #fff;
+        }
+    }
+}
+
+
+/*configuração ícones links*/
+.layout-profile__links img {
+    width: 4.8rem;
+    margin: 6% 4% 0 0;
+    @media(max-width: 750px) {
+        width: 12.8rem;
+        margin-right: 4%;
+    }
+}
+
+.murilo {
+    & .layout-profile__text{
+        color:#fff;
+        @media(max-width: 750px) {
+            color:#ff5050;
+        }
+    }
+
+    & .img__links--color{
+        display:inline;
+
+        @media(max-width: 750px) {
+            display:none;
+        }
+    }
+
+    & .img__links{
+        display:none;
+
+        @media(max-width: 750px) {
+            display:inline;
+        }
+    }
+}
+
+.gabi { 
+    & .img__links{
+        display:inline;
+        @media(max-width: 750px) {
+            display:none;
+        }
+    }
+
+    & .img__links--color{
+        display:none;
+        @media(max-width: 750px) {
+            display:inline;
+        }
+    }   
+}

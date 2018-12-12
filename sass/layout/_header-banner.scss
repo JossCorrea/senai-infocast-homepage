@@ -1,0 +1,15 @@
+.header-banner{
+    background-image: url(../assets/imgs/header.png);
+    background-size: cover;
+    background-position: center;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 96%, 90% 96%, 88% 100%, 67% 100%, 64% 93%, 0 93%);
+    clip-path: polygon(0 0, 100% 0, 100% 96%, 90% 96%, 88% 100%, 67% 100%, 64% 93%, 0 93%);
+    height: 60.5vw;
+
+    @media (max-width: 750px) {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        height: 178.5vw;
+    }
+}
+

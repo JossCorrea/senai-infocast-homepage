@@ -1,0 +1,31 @@
+.medias{
+    margin: 3% 10% 0.5% 10%;
+    border-top:1px solid #c8c8c8;
+    text-align: center;
+    @media (max-width: 750px){
+        margin: 9% 0% 3% 0%;
+        border-top:none;
+    }
+}
+
+.medias__img{
+    display: flex;
+    justify-content: center;
+    margin: 4rem auto;
+}
+ 
+.icon {
+    width: 4.5rem;
+    height: 4.5rem;
+    fill: #c8c8c8;
+    margin: 4% 2.6%;
+    @media (max-width: 750px){
+        width: 13rem;
+        height: 13rem;
+        margin: 5% 5%;
+    }
+}
+
+.icon:hover{
+    fill: #ff5050;
+}

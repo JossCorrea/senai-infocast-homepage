@@ -1,0 +1,17 @@
+/* section banner */
+.banner {
+    background-image: url(../assets/imgs/team01.png);
+    margin-top:-1%;
+    height: 36.2vw;
+    background-size: cover;
+    background-position: initial;
+    -webkit-clip-path: polygon(0 11%, 10% 11%, 13% 0%, 32% 0%, 35% 15%, 100% 15%, 100% 100%, 0 100%);
+    clip-path: polygon(0 11%, 10% 11%, 13% 0%, 32% 0%, 35% 15%, 100% 15%, 100% 100%, 0 100%);
+        
+        @media (max-width: 750px) {
+            margin-top: 2%;
+            height: 75.2vw;
+            -webkit-clip-path: polygon(0 16%, 21% 16%, 26% 5%, 68% 5%, 75% 20%, 100% 20%, 100% 100%, 0 100%);
+            clip-path: polygon(0 16%, 21% 16%, 26% 5%, 68% 5%, 75% 20%, 100% 20%, 100% 100%, 0 100%);
+        }
+}

@@ -1,0 +1,95 @@
+.news{
+
+    &__container{
+        margin: 5% 32% 0 35%;
+        @media (max-width: 750px){
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            margin: 16% 0% 0% 0%;
+        }
+    }
+    
+    &__title {
+        font-family: 'Space Mono', monospace;
+        color: #730bd2;
+        font-weight: 200;
+        font-size: 6rem;
+        @media (max-width: 750px){
+            font-size: 12rem;
+        }
+    }
+
+    &__form{
+        margin-top:17%;
+        @media (max-width: 750px){
+            padding: 0% 8%;
+            margin-top:15%;
+        }
+
+        .news__input{
+            width: 100%;
+            font-family: 'Montserrat', sans-serif;
+            color: #c8c8c8;
+            border: none;
+            border-bottom: 1px solid #c8c8c8;
+            padding-bottom: 1.8rem;
+            margin-bottom: 3.7rem;
+            font-size: 2.2rem;
+            outline: none;
+            @media (max-width: 750px){
+                font-size: 8rem;
+                padding-bottom: 4rem;
+                margin-bottom: 7rem;
+            }
+           
+
+            &:focus{
+                border-bottom: 1px solid #ff5050;
+                color:#ff5050;
+                &::placeholder{
+                    color: #ff5050;
+                }
+            }
+
+            &::placeholder{
+                color: #c8c8c8;
+            }
+        }
+
+        .news__button{
+            padding: 1.8rem 4.7rem;
+            border-color: #730bd2;
+            border-radius: 0.5rem;
+            color: #730bd2;
+            background-color: transparent;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.8rem;
+            margin: 4% 0% 5% 30%;
+            @media (max-width: 750px){
+                margin: 8% 0% 5% 0%;
+                padding: 6rem 16rem;
+                font-size: 6rem;
+            }
+        }
+    }
+    
+    strong{
+        font-weight: 900;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
