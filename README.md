@@ -6,3 +6,5 @@ O resultado final pode ser acessado no link: https://infocast-dev.azurewebsites.
 
 Confira mais sobre o projeto:
 <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6468186438822293504" height="545" width="504" frameborder="0" allowfullscreen=""></iframe>
+
+Developed by: Bárbara Aguilar <a>https://github.com/barbara-aguilar</a>; Cláudia Batista <a>https://github.com/claubatista</a>; Gisele Santin<a>https://github.com/gisantin</a>; Joseline Corrêa<a>https://github.com/JossCorrea</a>; Nicole Almeida <a><https://github.com/almeida-nicole/a>; Sílvia Dorosz <a>https://github.com/doroszsilvia</a>
